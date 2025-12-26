@@ -19,6 +19,7 @@ Guess the Number is a classic single-player game where the computer generates a 
    - Reach the maximum number of attempts (lose)
 
 ## Code
+Solution is written inside the Jupyter Notebook : [View the code ](Basics_Checkpoint.ipynb)
 ```python
 import random as rnd
 
