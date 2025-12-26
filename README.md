@@ -22,22 +22,30 @@ Guess the Number is a classic single-player game where the computer generates a 
 ```python
 import random as rnd
 
-f = rnd.randint(1, 100)
-r = int(input('Enter a number between 1 and 100: '))
-Try = 0
+f= rnd.randint(1,100)
+r = int (input('Enter a number between 1 and 100'))
+Try = 0 
 
-while True:
-    if r > f:
-        print('Too high, try again.')
-        r = int(input('Enter a number between 1 and 100: '))
+while True :
+
+    if (r > f ):
+        print('Too hight try again ')
+        r = int (input('Enter a number between 1 and 100'))
+        Try = Try +1
+
+    if (r < f ):
+        print('Too low try again ')
+        r = int (input('Enter a number between 1 and 100'))
         Try = Try + 1
-    if r < f:
-        print('Too low, try again.')
-        r = int(input('Enter a number between 1 and 100: '))
-        Try = Try + 1
-    if Try == 5:
-        print(f'You reached the maximum number of tries, the number was {f}, better luck next time!')
+         
+    if (Try == 5): 
+        print(f'You reach the maximum number of tries, the number was {f}, better luck next time !')
         break
+   
+    if (r == f):
+        print(f"YOU GOT THE RIGHT NUMBER AT TRY NUMBER {Try+1}")
+        break
+
 ```
 
 ## Welcome to the Guess the Number game!
